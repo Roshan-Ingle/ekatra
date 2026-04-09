@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekatra | Parent Domain</title>
+    
+    <!-- Using Inter for a clean, modern, and minimalist feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
+
+    <style>
+        /* Minimalist Dark Theme Tokens */
+        :root {
+            --bg-color: #09090b;          /* Deep almost-black background */
+            --card-bg: #111113;           /* Very subtle card contrast */
+            --border-color: #27272a;      /* Soft border for definition */
+            
+            --text-primary: #f4f4f5;      /* Crisp white for headings */
+            --text-secondary: #a1a1aa;    /* Muted gray for body text */
+            
+            --font-main: 'Inter', sans-serif;
+        }
+
+        /* Base Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers the card vertically */
+            min-height: 100dvh;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Main Container */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+
+        /* Minimalist Card */
+        .minimal-card {
+            background-color: var(--card-bg);
+            border-radius: 24px; 
+            padding: 3.5rem 2.5rem;
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Profile Photo & Name Group */
+        .profile-photo {
+            width: 96px; 
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+            margin-bottom: 0.75rem;
+            padding: 4px; /* Creates a subtle ring effect */
+            background-color: var(--bg-color);
+        }
+
+        .profile-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem; /* Space before the main heading */
+            letter-spacing: 0.05em;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 0.15em; /* Wider tracking for a premium feel */
+            color: var(--text-primary);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        p.main-description {
+            font-size: 1.05rem;
+            font-weight: 300;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            max-width: 380px;
+            margin-inline: auto; /* Centers the text block perfectly */
+        }
+
+        /* Sleek Pill Badge */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(255, 255, 255, 0.03);
+            color: var(--text-secondary);
+            padding: 8px 16px;
+            border-radius: 99px; /* Pill shape */
+            font-size: 0.85rem;
+            font-weight: 400;
+            border: 1px solid var(--border-color);
+            letter-spacing: 0.03em;
+        }
+
+        .badge .material-symbols-outlined {
+            font-size: 18px;
+        }
+
+        /* Subtle load-in animation */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="minimal-card">
+            
+            <img src="https://i.ibb.co/C5YjbsMN/1772548089572.png" alt="Roshan Ingle" class="profile-photo">
+            <div class="profile-name">Roshan Ingle</div>
+
+            <h1>Ekatra</h1>
+            
+            <p class="main-description">
+                Serving as the foundational parent domain hosting a diverse portfolio of upcoming initiatives.
+            </p>
+
+            <div class="badge">
+                <span class="material-symbols-outlined">workspaces</span>
+                Active Personal Initiative
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
